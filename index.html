@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Company</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("GdUX0zPWZDv-UnxBR");
+    })();
+  </script>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" class="logo">
+  <h1>Tech Company</h1>
+</header>
+
+<section class="hero">
+  <h2>Build Your Future With Us</h2>
+  <p>We create websites, apps, and games. Join us or learn through our short courses.</p>
+</section>
+
+<section class="services">
+  <h2>What We Provide</h2>
+  <ul>
+    <li>Website Development</li>
+    <li>App Development</li>
+    <li>Game Development</li>
+    <li>Short Tech Courses</li>
+  </ul>
+</section>
+
+<section class="form-section">
+  <h2>Join Us</h2>
+
+  <form id="joinForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="text" id="address" placeholder="Address" required>
+    <input type="text" id="qualification" placeholder="Qualification" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <input type="email" id="email" placeholder="Email" required>
+
+    <button type="submit">Apply Now</button>
+  </form>
+
+  <p id="message"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
